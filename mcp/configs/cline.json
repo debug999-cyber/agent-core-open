@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "streamableHttp",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer <СЮДА_ТОКЕН>"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_me",
+        "get_file_contents",
+        "list_branches",
+        "list_commits",
+        "list_issues",
+        "search_issues",
+        "search_repositories",
+        "search_code",
+        "list_pull_requests"
+      ]
+    }
+  }
+}

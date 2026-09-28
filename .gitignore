@@ -1,0 +1,19 @@
+# секреты — никогда в репозиторий
+.env
+*.key
+*.pem
+*.p12
+id_rsa
+id_ed25519
+.git-credentials
+*.token
+backups/
+*backup*.json
+*.bak-*
+
+# мусор системы
+.DS_Store
+
+# настройки Obsidian (открытие репо как vault)
+.obsidian/
+.trash/

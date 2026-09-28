@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<СЮДА_ТОКЕН>"
+      }
+    },
+    "obsidian": {
+      "command": "obsidian-mcp",
+      "args": [],
+      "env": {
+        "OBSIDIAN_API_KEY": "<КЛЮЧ_из_плагина_Local_REST_API>",
+        "OBSIDIAN_BASE_URL": "https://127.0.0.1:27124"
+      }
+    }
+  }
+}
